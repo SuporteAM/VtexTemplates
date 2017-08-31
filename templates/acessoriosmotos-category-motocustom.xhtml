@@ -12,7 +12,9 @@
     <vtex:metaTags/>
     <script>var BF = {desconto: 0};</script><!-- <vtex.cmc:descontoBoleto /> /> -->
     <vtex.cmc:descontoBoleto/><!-- /<vtex.cmc:descontoBoleto /> /> --></head>
-<body class="product"><!--include ../partials/grid.pug-->
+<body class="category"><!-- <vtex:template id="acessoriosmotos-common-scripts" /> -->
+<vtex:template
+        id="acessoriosmotos-common-scripts"/><!-- /<vtex:template id="acessoriosmotos-common-scripts" /> --><!--include ../partials/grid.pug-->
 <div class="visuallyhidden"><!-- inject:svg -->
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs>
@@ -389,156 +391,34 @@
         </symbol>
     </svg><!-- endinject --></div><!-- <vtex:template id="acessoriosmotos-Header" /> -->
 <vtex:template id="acessoriosmotos-Header"/><!-- /<vtex:template id="acessoriosmotos-Header" /> -->
-<main>
-    <div class="breadcrumb">
-        <div class="container">
-            <div class="col-xs-16">
-                <svg class="icon icon-house">
-                    <use xlink:href="#icon-house"></use>
-                    <span class="visuallyhidden">icon-house</span></svg><!-- <vtex.cmc:breadCrumb /> /> -->
-                <vtex.cmc:breadCrumb/><!-- /<vtex.cmc:breadCrumb /> /> --></div>
-        </div>
-    </div>
+<section class="carousel"></section>
+<section class="banners-category">
     <div class="container">
-        <div class="row spot-picture">
-            <div class="col-xs-16">
-                <div class="product-spot__title">
-                    <h1><!-- <vtex.cmc:productName /> /> -->
-                        <vtex.cmc:productName/><!-- /<vtex.cmc:productName /> /> --></h1>
-                    <div class="product-spot__brand">
-                        <div class="brandName" id="js-brand"></div>
-                    </div>
-                    <div class="product-spot__sku"><!-- <vtex.cmc:skuReference /> /> -->
-                        <vtex.cmc:skuReference/><!-- /<vtex.cmc:skuReference /> /> --></div>
-                </div>
-            </div>
-            <div class="col-xs-16 col-sm-10">
-                <div id="js-product-swiper" data-module="PicturesSlider"></div>
-                <div class="row">
-                    <div class="more-colors">
-                        <div class="reactVitrine"
-                             data-module="ShelfShiv"><!-- <vtex:contentPlaceHolder id="produtos relacionados" columnCount="4" itemCount="4" /> -->
-                            <vtex:contentPlaceHolder
-                                    id="produtos relacionados"/><!--vtex:contentPlaceHolder(id=id, columnCount=columnCount, itemCount=itemCount)/--><!-- /<vtex:contentPlaceHolder id="produtos relacionados" columnCount="4" itemCount="4" /> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-16 col-sm-6">
-                <section class="product-spot">
-                    <div class="product-spot__rating">
-<!--                        <div id="rating"><a class="trustvox-fluid-jump trustvox-widget-rating" href="#trustvox-reviews"
-                                            title="Pergunte e veja opiniões de quem já comprou">
-                            <div class="trustvox-shelf-container" data-trustvox-product-code-js="skuJson.productId"
-                                 data-trustvox-should-skip-filter="true" data-trustvox-display-rate-schema="true"></div>
-                            <span class="rating-click-here">Clique e veja!</span></a>
-                            <style type="text/css">.trustvox-widget-rating .ts-shelf-container,
-                            .trustvox-widget-rating .trustvox-shelf-container {
-                                display: inline-block;
-                            }
-
-                            .trustvox-widget-rating span.rating-click-here {
-                                top: -3px;
-                                display: inline-block;
-                                position: relative;
-                                color: #DAA81D;
-                            }
-
-                            .trustvox-widget-rating:hover span.rating-click-here {
-                                text-decoration: underline;
-                            }</style>
-                        </div>
-                        <div class="product-spot__rating-link"><p><a href="#trustvox-reviews">Leia </a>ou <a
-                                href="#trustvox-reviews">Faça uma Avaliação</a></p></div>-->
-                        <div class="yv-review-quickreview"></div>
-                    </div>
-                    <div class="product-spot__price"><!-- <vtex.cmc:skuPrice /> /> -->
-                        <vtex.cmc:skuPrice/><!-- /<vtex.cmc:skuPrice /> /> --><!-- <vtex.cmc:OtherPaymentMethod /> /> -->
-                        <vtex.cmc:OtherPaymentMethod/><!-- /<vtex.cmc:OtherPaymentMethod /> /> -->
-                        <button class="more-parc">+ Opções de parcelamento</button>
-                    </div>
-                    <div class="product-spot__sku-selector">
-                        <div id="js-sku-selector"></div>
-                        <div id="armored_website">
-                            <param id="aw_preload" value="true"/>
-                        </div>
-                        <script type="text/javascript" src="//selo.siteblindado.com/aw.js"></script>
-                    </div>
-                    <div class="product-spot__buy"><!-- <vtex.cmc:buyButton /> /> -->
-                        <vtex.cmc:buyButton/><!-- /<vtex.cmc:buyButton /> /> --></div>
-                    <div class="product-spot__frete"><!-- <vtex.cmc:shippingValue /> /> -->
-                        <vtex.cmc:shippingValue/><!-- /<vtex.cmc:shippingValue /> /> --></div>
-                </section>
-            </div>
-        </div>
-    </div>
-</main>
-<section class="product-info">
-    <div class="container col-xs-16">
-        <div class="content"><h2 class="bf-product__painel">DESCRIÇÃO</h2><!-- <vtex.cmc:ProductDescription /> /> -->
-            <vtex.cmc:ProductDescription/><!-- /<vtex.cmc:ProductDescription /> /> --></div>
-        <div class="content" id="js-tecnicalInformation"></div>
-    </div>
-</section>
-<section class="buy-together">
-    <div class="container col-xs-16">
-        <div class="content"><!-- <vtex.cmc:BuyTogether /> /> -->
-            <vtex.cmc:BuyTogether/><!-- /<vtex.cmc:BuyTogether /> /> --></div>
-    </div>
-</section>
-<section class="more-products">
-    <div class="container col-xs-16">
-        <div class="content">
-            <div class="reactVitrine"
-                 data-module="ShelfShiv"><!-- <vtex:contentPlaceHolder id="quem-viu-viu-também" columnCount="4" itemCount="4" /> -->
-                <vtex:contentPlaceHolder
-                        id="quem-viu-viu-também"/><!--vtex:contentPlaceHolder(id=id, columnCount=columnCount, itemCount=itemCount)/--><!-- /<vtex:contentPlaceHolder id="quem-viu-viu-também" columnCount="4" itemCount="4" /> -->
-            </div>
+        <div class="col-xs-16"><!-- <vtex:contentPlaceHolder id="bf-banner-category-principal" -->
+            <vtex:contentPlaceHolder
+                    id="bf-banner-category-principal"/><!-- /<vtex:contentPlaceHolder id="bf-banner-category-principal" -->
         </div>
     </div>
 </section>
-<section class="more-products">
-    <div class="container col-xs-16">
-        <div class="content">
-            <div class="reactVitrine"
-                 data-module="ShelfShiv"><!-- <vtex:contentPlaceHolder id="quem-viu-comprou-também" columnCount="4" itemCount="4" /> -->
-                <vtex:contentPlaceHolder
-                        id="quem-viu-comprou-também"/><!--vtex:contentPlaceHolder(id=id, columnCount=columnCount, itemCount=itemCount)/--><!-- /<vtex:contentPlaceHolder id="quem-viu-comprou-também" columnCount="4" itemCount="4" /> -->
-            </div>
-        </div>
-    </div>
+<section class="category">
+    <aside class="filters"></aside>
+    <main>
+        <div id="js-product-grid"></div>
+        <script src="/arquivos/category.js"></script>
+    </main>
 </section>
-<section class="review" id="section__rating">
-    <div class="container col-xs-16">
-        <div class="content" id="trustvox-reviews">
-            <div id="_trustvox_widget"></div>
-        </div>
-    </div>
-</section>
-<div class="visuallyhidden shame"><!-- <vtex.cmc:skuSelection /> /> -->
-    <vtex.cmc:skuSelection/><!-- /<vtex.cmc:skuSelection /> /> --></div>
+<section class="hidden" id="js-category-info"><!-- <vtex:contentPlaceHolder id="category-info" -->
+    <vtex:contentPlaceHolder id="category-info"/><!-- /<vtex:contentPlaceHolder id="category-info" --></section>
 <div class="section newsletter"><!-- <vtex:template id="acessoriosmotos-Newsletter" /> -->
     <vtex:template id="acessoriosmotos-Newsletter"/><!-- /<vtex:template id="acessoriosmotos-Newsletter" /> -->
-</div><!-- <vtex.cmc:navigationHistory /> /> -->
-<vtex.cmc:navigationHistory/><!-- /<vtex.cmc:navigationHistory /> /> --><!-- <vtex:template id="acessoriosmotos-Footer" /> -->
+</div><!-- <vtex:template id="acessoriosmotos-Footer" /> -->
 <vtex:template id="acessoriosmotos-Footer"/><!-- /<vtex:template id="acessoriosmotos-Footer" /> -->
-</body><!-- <vtex:template id="acessoriosmotos-common-scripts" /> -->
-<vtex:template id="acessoriosmotos-common-scripts"/><!-- /<vtex:template id="acessoriosmotos-common-scripts" /> -->
-<script src="/arquivos/product.js" async="async"></script>
-<!--<script type="text/javascript">var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
+<div class="hidden" id="shame"><!-- <vtex.cmc:searchNavigator /> /> -->
+    <vtex.cmc:searchNavigator/><!-- /<vtex.cmc:searchNavigator /> /> --></div>
+</body>
+<script type="text/javascript">var _trustvox_shelf_rate = _trustvox_shelf_rate || [];
 _trustvox_shelf_rate.push(['_storeId', '1582']);
 _trustvox_shelf_rate.push(['_productContainer', '.js-vitrine .vitrine-item']);</script>
 <script type="text/javascript" async="true"
         src="//s3-sa-east-1.amazonaws.com/trustvox-rate-widget-js/widget.js"></script>
-<script type="text/javascript">window._trustvox = [];
-_trustvox.push(['_storeId', '1582']);
-_trustvox.push(['_productId', skuJson.productId]);
-_trustvox.push(['_productName', skuJson.name]);
-_trustvox.push(['_productPhotos', [skuJson.skus[0].image]]);</script>
-<script async="true" type="text/javascript" src="//static.trustvox.com.br/assets/widget.js"></script>-->
-<script type="text/javascript">
-    $(document).ready(function() {
-       $('#yv-review-quickreview').attr('value', skuJson.productId);
-    });
-</script>
 </html>
